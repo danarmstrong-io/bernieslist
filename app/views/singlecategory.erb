@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Welcome to BerniesList</h1>
+  <h3><%= @category.name %></h3>
+
+  <ul>
+  <% @posts.each do |post| %>
+  <span>
+    <li><a href="/post/<%= post.id %>"><%= post.title %></a></li>
+  </span>
+
+  <% end %>
+  </ul>
+
+</div>
