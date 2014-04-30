@@ -5,3 +5,9 @@ $(document).ready(function() {
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
 });
+
+
+
+
+
+// $("ul").append("<li>category added with jQuery</li>")

@@ -7,3 +7,12 @@
 th {
   text-align: left;
 }
+
+ul {
+list-style-type:none;
+
+}
+
+#top_menu {
+  display: inline;
+}

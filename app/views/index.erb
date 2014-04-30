@@ -11,3 +11,18 @@
 
  
 </div>
+
+
+<div class="container">
+  <h1>Recent Posts</h1>
+  <ul>
+  <% @current_posts.each do |post| %>
+  <span>
+    <li><a href="/post/<%= post.id %>"><%= post.title %></a><li>
+    <li><%= date_fix(post.created_at) %></li>
+  </span>
+  <% end %>
+  </ul>
+
+ 
+</div>

@@ -1,4 +1,6 @@
 get '/' do
-  # Look in app/views/index.erb
+  @categories = Category.order("name")
+  @current_posts = Post.order("created_at DESC Limit 4")
   erb :index
 end
+
